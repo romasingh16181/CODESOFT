@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Online-Shopping Web</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<header id="home">
+		<nav>
+			<div class="logo">Online-Shop</div>
+			<div class="menu">
+				<a href="#home">Home</a>
+				<a href="#featured">Featured</a>
+				<a href="#man">Home Applinces </a>
+				<a href="#women">Furniture</a>
+				<a href="login.html">login</a>
+				<a href="#">Shop</a>
+			</div>
+		</nav>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,
+		initial-scale=1.0" />
+		<marquee width="60%" direction="right" height="100px">
+			<title>Digital Clock</title>
+
+			<style>
+				#clock {
+					font-size: 175px;
+					width: 900px;
+					margin: 200px;
+					text-align: center;
+					border: 2px solid black;
+					border-radius: 20px;
+					color: brown;
+
+				}
+			</style>
+			</head>
+
+			<body>
+				<div id="clock">8:10:45</div>
+
+				<script>
+					setInterval(showTime, 1000);
+					function showTime() {
+						let time = new Date();
+						let hour = time.getHours();
+						let min = time.getMinutes();
+						let sec = time.getSeconds();
+						am_pm = "AM";
+
+						if (hour > 12) {
+							hour -= 12;
+							am_pm = "PM";
+						}
+						if (hour == 0) {
+							hr = 12;
+							am_pm = "AM";
+						}
+
+						hour = hour < 10 ? "0" + hour : hour;
+						min = min < 10 ? "0" + min : min;
+						sec = sec < 10 ? "0" + sec : sec;
+
+						let currentTime = hour + ":"
+							+ min + ":" + sec + am_pm;
+
+						document.getElementById("clock")
+							.innerHTML = currentTime;
+					}
+
+					showTime();
+				</script>
+			</body>
+		</marquee>
+		<div class="container">
+			<div class="left">
+				<img src="images/s1.png.jpg">
+			</div>
+
+
+
+			<div class="right">
+				<h1>Best Festival Offers</h1>
+				<p>
+					We are providing best quality materials.
+				</p>
+				<p>
+					50% Discount!!!
+				</p>
+				<button>Shop</button><br>
+				<!-- <img src="images/icon.png"> -->
+			</div>
+		</div>
+	</header>
+	<section id="featured">
+		<h1>Featured</h1>
+		<div class="wrapper">
+			<div class="box1">
+				<img src="images/s1.png.jpg">
+				<div class="price">Price: Rs.10050</div>
+			</div>
+			<div>
+				<img src="images/s2.jpg">
+				<div class="price">Price: Rs.2250</div>
+			</div>
+			<div>
+				<img src="images/s3.jpg">
+				<div class="price">Price: Rs.7350 </div>
+			</div>
+			<div>
+				<img src="images/s4.jpg">
+				<div class="price">Price: Rs.3450</div>
+			</div>
+			<div>
+				<img src="images/s1.png.jpg">
+				<div class="price">Price: Rs.78750 </div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="man">
+		<div class="man-row">
+			<div class="man-box">
+				<img src="images/s5.jpg">
+				<h2>Nike Ferr TR<br>RS.429.99</h2>
+				<h3>Add to cart </h3>
+			</div>
+			<div class="man-box">
+				<img src="images/s2.jpg">
+				<h2>WOODEN CHAIR AND TABLE<br>RS.7529.99</h2>
+				<h3>Add to cart </h3>
+			</div>
+			<div class="man-box">
+				<img src="images/watch.jpg">
+				<h2>SMART WATCH<br>Rs.929.99</h2>
+				<h3>Add to cart </h3>
+			</div>
+			<div class="man-box">
+				<img src="images/table2.jpg">
+				<h2>MODERN TABLE AND CHAIR<br>Rs.1929.99</h2>
+
+				<h3>Add to cart </h3>
+			</div>
+			<div class="man-box">
+				<img src="images/watch1.jpg">
+				<h2> COOLEST WATCH<br>Rs.1029.99</h2>
+				<h3>Add to cart </h3>
+			</div>
+		</div>
+	</section>
+
+	<section id="women">
+
+		<div class="man-row">
+			<div class="man-box">
+				<img src="images/s1.png.jpg">
+				<h2>BLUE BED<br>Rs.10050</h2>
+				<h3>Add to cart </h3>
+			</div>
+			<div class="man-box">
+				<img src="images/s4.jpg">
+				<h2>PUJA<br>Rs.3450</h2>
+				<h3>Add to cart </h3>
+			</div>
+			<div class="man-box">
+				<img src="images/table2.jpg">
+				<h2>BED <br>Rs.10050</h2>
+				<h3>Add to cart </h3>
+			</div>
+			<div class="man-box">
+				<img src="images/s11.jpg">
+				<h2>SOFA<br>Rs.7350</h2>
+				<h3>Add to cart </h3>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section id="footer">
+		<h2>Developed by Roma </h2>
+		<img src="images/icon.png">
+	</section>
+
+
+</body>
+
+</html>
