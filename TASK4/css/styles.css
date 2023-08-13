@@ -1,0 +1,81 @@
+
+
+/*------ Font imported from google fonts ------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/*------ Setting default margin and pading of the page to zero ------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*------ Setting font family for the page ------*/
+body{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+/*------ Munshi premchand name styling ------*/
+.name-title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+/*------ READ MORE BUTTON STYLING ------*/
+.btn-primary{
+    box-shadow: none !important;
+    padding: 8px 25px;
+    border-radius: 2px !important;
+    border: 2px solid green !important;
+    color: green !important;
+    background: none !important;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+
+/*------ READ MORE BUTTON STYLING : WHEN HOVERED ------*/
+.btn-primary:hover{
+    background: green !important;
+    color: #fff !important;
+    border: 2px solid #fff !important;
+}
+
+/*------ For all unordered lists ------*/
+ul{
+    list-style-type: none;
+    font-weight: lighter;
+}
+
+
+/*------ For all list items ------*/
+ul li{
+    padding: 3px;
+    font-weight: 300;
+    color: black;
+}
+
+
+/*------ FOR LIST OF WORKS------*/
+.life-works{
+    padding-top: 50px;
+    
+}
+
+
+/*------ Styling for every heading under ID : life ------*/
+#life{
+    padding-top: 50px;
+    color: green;
+}
+
+
+/*------ Premchand stamp margin correction ------*/
+.stamp-correction{
+    margin-top: 50px;
+}
